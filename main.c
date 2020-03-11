@@ -13,7 +13,7 @@ int run_game()
     main_game_connection.console_size.x = 10;
     main_game_connection.console_size.y = 10;
     //draw_to_screen(main_game_connection, test_image);
-    draw_window(20, L"X to exit game.", L"hello");
+    draw_window(20, L"X to exit game.", L"hello my name is [unknown] and I work at [redacted]. Today I will be...");
 
     console_colour(0x07);
     return 0;
