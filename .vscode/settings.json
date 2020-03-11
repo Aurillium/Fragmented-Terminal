@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "tchar.h": "c",
+        "windows_all.c": "cpp",
+        "stdint.h": "c",
+        "linux.c": "cpp"
+    }
+}
