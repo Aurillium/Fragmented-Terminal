@@ -28,16 +28,16 @@ typedef struct vector2 {
 } vector2;
 
 size_t wputs(const wchar_t* str) {
-    size_t ret = fwrite(str, 2, wcslen(str), stdout);
-    fwrite(L"\n", 2, 1, stdout);
+    size_t ret = fwrite(str, sizeof(wchar_t), wcslen(str), stdout);
+    fwrite(L"\n", sizeof(wchar_t), 1, stdout);
     return ret;
 }
 size_t wputs_no_nl(const wchar_t* str) {
-    return fwrite(str, 2, wcslen(str), stdout);;
+    return fwrite(str, sizeof(wchar_t), wcslen(str), stdout);;
 }
 int wputchar(wchar_t c) {
-    return !fwrite(&c, 2, 1, stdout);
+    return !fwrite(&c, sizeof(wchar_t), 1, stdout);
 }
-int wputchar(char c) {
-    return wputchar((wchar_t)c);
-}
+//int wputchar(char c) {
+//    return wputchar((wchar_t)c);
+//}
