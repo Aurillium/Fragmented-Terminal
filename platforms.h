@@ -44,4 +44,5 @@
         #include <stophere>
     #endif
     #include "includes/types.c"
+    #include "includes/dialogs.c"
 #endif
