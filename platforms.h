@@ -1,5 +1,5 @@
 #ifndef OS_TYPE
-    #include "req_types.c"
+    #include "includes/req_types.c"
     #ifdef ANDROID
         #define OS_TYPE 0
         #include "platforms/android.c"
@@ -43,5 +43,5 @@
         #error OS not supported.
         #include <stophere>
     #endif
-    #include "types.c"
+    #include "includes/types.c"
 #endif
