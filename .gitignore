@@ -1,3 +1,3 @@
-test_image.bin
-main.exe
-main.obj
+**.bin
+**.exe
+**.obj
